@@ -1,0 +1,22 @@
+.botao__contador, h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#diminui, #almenta, #numero {
+    width: 4%;
+    height: 2%;
+
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+#numero {
+    text-align: center;
+}
+
+.imagem__carrinho {
+    width: 2%;
+    height: 2%;
+}

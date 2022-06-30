@@ -1,0 +1,17 @@
+.botao__contador, h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#contador, #botao {
+    width: 4%;
+    height: 2%;
+
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+#contador {
+    text-align: center;
+}
