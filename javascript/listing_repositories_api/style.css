@@ -1,0 +1,66 @@
+/* Reset */
+* {
+    margin: none;
+    padding: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+/* Style */
+body {
+    width: 100vw;
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(20, 20, 20);
+}
+
+.title {
+    font-size: 30px;
+    
+    text-align: center;
+
+    color: #fff;
+    font-family: Righteous;
+}
+
+#listaTarefas {
+    width: 500px;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: 2px solid #fff;
+    
+}
+
+#escreveDisplay {
+    width: 500px;
+    height: 40px;
+    padding: 0 30px;
+    
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 187, 0);
+    font-family: 'Comfortaa', cursive;
+    box-sizing: border-box;
+}
+
+.buttonAdd {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+
+    background-color: #fff;
+}
