@@ -28,52 +28,97 @@ body {
     font-family: Righteous;
 }
 
-#addTarefa {
+#listaTarefas {
+    width: 500px;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#display {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     border: 2px solid #fff;
-
-    box-sizing: border-box;
+    
 }
 
-#escreveTarefa {
-    width: 400px;
-    width: 400px;
+#escreveDisplay {
+    width: 500px;
     height: 40px;
-    padding: 0 25px;
-
+    padding: 0 30px;
+    
     background-color: rgb(20, 20, 20);
-    color: white;
+    color: rgb(255, 187, 0);
     font-family: 'Comfortaa', cursive;
+    box-sizing: border-box;
 }
 
 .buttonAdd {
     width: 40px;
     height: 40px;
-    font-weight: 400;
     font-size: 30px;
 
     background-color: #fff;
 }
 
-#tarefasQuantidade{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+#checkboxTarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+.checkboxTarefa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.tarefa {
+    font-size: 16px;
+    
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+.checkboxText {
+    width: 430px;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#lixeira {
+    width: 20px;
+    height: auto;
+    
+    color: white;
+}
+
+#tarefasQuantidade{
+    padding: 10px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     border-top: 2px solid #fff;
 }
 
+.quantidade {
+    display: flex;
+    gap: 10px;
+}
+
 .text {
-    width: 200px;
-    height: 10px;
-    font-weight: 300;
     font-size: 14px;
-
-    text-align: center;
-
+    
     color: white;
     font-family: 'Comfortaa', cursive;
 }

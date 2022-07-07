@@ -3,27 +3,37 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Calculadora</title>
+    <title>ToDo List</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Righteous&display=swap" rel="stylesheet"></head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 <body>
     <section id="listaTarefas">
         <h2 class="title">My ToDo List</h2>
-        <div id="addTarefa">
-            <input type="text" id="escreveTarefa" name="tarefa" placeholder="Adicione uma nova tarefa">
+        <div id="display">
+            <input type="text" id="escreveDisplay" name="escreveTarefa" placeholder="Adicione uma nova tarefa">
             <button class="buttonAdd">+</button>
         </div>
-        <div id="tarefas">
-            <p class="text">teste tarefa</p>
-            <p class="text">teste tarefa</p>
-            <p class="text">teste tarefa</p>
+        <div id="checkboxTarefas">
+            <div class="checkboxTarefa">
+                <div class="checkboxText">
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <label class="tarefa">teste tarefa</label>
+                </div>
+                <i data-feather="trash" id="lixeira"></i>
+            </div>
         </div>
-        <div id="tarefasQuantidade">  
-            <p class="text">Tarefas concluidas: </p>  
-            <p class="text quantidadeConcluida">0</p>
-            <p class="text">Tarefas pendentes: </p>  
-            <p class="text quantidadePendente">0</p>
+        <div id="tarefasQuantidade">
+            <div class="quantidade">
+                <p class="text">Tarefas concluidas: </p>  
+                <p class="text quantidadeConcluida">0</p>
+            </div>
+            <div class="quantidade">
+                <p class="text">Tarefas pendentes: </p>  
+                <p class="text quantidadePendente">0</p>
+            </div>
         </div>
     </section>
 </body>
