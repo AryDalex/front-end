@@ -28,7 +28,7 @@ body {
     font-family: Righteous;
 }
 
-#listaTarefas {
+#lista {
     width: 500px;
     height: auto;
     
@@ -54,13 +54,30 @@ body {
     background-color: rgb(20, 20, 20);
     color: rgb(255, 187, 0);
     font-family: 'Comfortaa', cursive;
+
     box-sizing: border-box;
 }
 
-.buttonAdd {
+.buttonBuscar {
     width: 40px;
     height: 40px;
     font-size: 30px;
 
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
+}
+
+#buscar {
+    width: 20px;
+    height: auto;
+    
+    color: rgb(0, 0, 0);
+}
+
+#repositorios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-family: 'Comfortaa', cursive;
+    color: white;
 }
