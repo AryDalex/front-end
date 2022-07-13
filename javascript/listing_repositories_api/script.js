@@ -1,20 +1,37 @@
 feather.replace()
 
-const html = document.querySelector("#repositorios")
-// const display = document.querySelector("#escreveDisplay")
+const pesquisaHtml = document.querySelector(".pesquisa")
+const repositoriosHtml = document.querySelector("#repositorios")
+const display = document.querySelector(".escreveDisplay")
+const button = document.querySelector(".buttonBuscar")
 
-// fetch(`https://api.github.com/users/${display}/repos`)
-fetch("https://api.github.com/users/arydalex/repos")
+let displayValue = []
 
-.then(data => data.json())
-.then(data => {
-    view(data)
-})
+display.onkeyup = () => {
+    displayValue = display.value
+}
 
-.catch((error) => {
-    console.error("Error: ", error)
-})
+button.onclick = () => {
+    if (displayValue.length > 0) {
+        view()
+        alert(`Repositórios de ${displayValue}`)
+    }
+}
 
-function view(value) {
-    html.innerText = JSON.stringify(value)
+const view = async () => {
+    const repositoriosWeb = await fetch(`https://api.github.com/users/${displayValue}/repos`)
+    const repositorios = await repositoriosWeb.json();
+
+    repositoriosHtml.innerHTML = ""
+
+    repositorios.forEach(repositorio => {
+        const html = 
+            `<div class="repositorio">
+                <h3>${repositorio.name}</h3>
+                <p>${repositorio.language}</p>
+            </div>`;
+
+        
+        repositoriosHtml.innerHTML += html
+   })
 }
