@@ -1,5 +1,19 @@
 feather.replace()
 
+const divTexto = document.createElement("div");
+const check = document.createElement("input");
+const tarefa = document.createElement("label");
+
+divTexto.setAttribute("class", "texto2");
+document.querySelector(".principal").appendChild(divTexto);
+
+check.setAttribute("type", "checkbox", "class", "check");
+document.querySelector(".texto2").appendChild(check);
+
+tarefa.innerHTML = "blaaaa";
+tarefa.setAttribute("class", "oi");
+document.querySelector(".texto2").appendChild(tarefa);
+
 async function apiGetTask() {
     const url = 'http://localhost:3000/tasks/' // or const url = 'http://[::1]:3000/tasks'
 
@@ -79,9 +93,10 @@ async function apiUpdateTask(id, complete) {
     }
 }
 
-apiCreateTask("Tarefa de Teste", false)
+// apiCreateTask("Tarefa de Teste", false)
 
 apiGetTask() // retorna a lista de tarefasQuantidade // get
-apiPutTask(204, "task put", true) // put
-apiUpdateTask(201, true) // patch
-apiDeleteTask(163) // delete
+// apiPutTask(2, "task put", true) // put
+// apiUpdateTask(3, true) // patch
+// apiDeleteTask(1) // delete
+

@@ -1,6 +1,5 @@
 feather.replace()
 
-const pesquisaHtml = document.querySelector(".pesquisa")
 const repositoriosHtml = document.querySelector("#repositorios")
 const display = document.querySelector(".escreveDisplay")
 const button = document.querySelector(".buttonBuscar")
@@ -14,7 +13,6 @@ display.onkeyup = () => {
 button.onclick = () => {
     if (displayValue.length > 0) {
         view()
-        alert(`Repositórios de ${displayValue}`)
     }
 }
 

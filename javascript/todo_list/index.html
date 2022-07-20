@@ -10,29 +10,30 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 <body>
-    <section id="listaTarefas">
+    <section id="todo">
         <h2 class="title">My ToDo List</h2>
-        <div id="display">
-            <input type="text" id="escreveDisplay" name="escreveTarefa" placeholder="Adicione uma nova tarefa">
+        <div id="barra">
+            <input type="text" class="escreve" name="escreveTarefa" placeholder="Adicione uma nova tarefa">
             <button class="buttonAdd">+</button>
         </div>
-        <div id="checkboxTarefas">
+        <div id="todoList">
             <div class="checkboxTarefa">
-                <div class="checkboxText">
-                    <input type="checkbox" id="checkbox" name="checkbox">
+                <div class="texto">
+                    <input type="checkbox" class="check" name="checkbox">
                     <label class="tarefa">teste tarefa</label>
                 </div>
-                <i data-feather="trash" id="lixeira"></i>
+                <i data-feather="trash" class="lixeira"></i>
             </div>
+            <div class="principal" style="color: white;"></div>
         </div>
         <div id="tarefasQuantidade">
             <div class="quantidade">
-                <i data-feather="check-circle" id="lixeira"></i>
+                <i data-feather="check-circle" class="ok"></i>
                 <p class="text">Tarefas concluidas: </p>  
                 <p class="text quantidadeConcluida">0</p>
             </div>
             <div class="quantidade">
-                <i data-feather="circle" id="lixeira"></i>
+                <i data-feather="circle" class="pendente"></i>
                 <p class="text">Tarefas pendentes: </p>  
                 <p class="text quantidadePendente">0</p>
             </div>

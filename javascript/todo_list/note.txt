@@ -1,0 +1,36 @@
+// const tarefasHTML = document.querySelector("#checkboxTarefas")
+// const barraHTML = document.querySelector(".escreve")
+// const buttonHTML = document.querySelector(".buttonAdd")
+
+// let tarefa = [];
+
+// barraHTML.onkeyup = () => {
+//     tarefa = barraHTML.value
+// }
+
+// buttonHTML.onclick = () => {
+//     if (barraHTML.length > 0) {
+//         tarefas()
+//     }
+// }
+
+// const tarefas = async () => {
+//     // const repositoriosWeb = await fetch(`https://api.github.com/users/${displayValue}/repos`)
+//     // const repositorios = await repositoriosWeb.json();
+
+//     tarefasHTML.innerHTML = ""
+
+//     repositorios.forEach(repositorio => {
+//         const html = 
+//             `<div class="checkboxTarefa">
+//                 <div class="checkboxText">
+//                     <input type="checkbox" id="checkbox" name="checkbox">
+//                     <label class="tarefa">${tarefa}</label>
+//                 </div>
+//                 <button class="buttonRemove"><i data-feather="trash" id="lixeira"></i></button>
+//             </div>`;
+
+        
+//             tarefasHTML.innerHTML += html
+//    })
+// }
