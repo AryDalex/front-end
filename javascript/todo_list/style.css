@@ -7,6 +7,11 @@
     outline: none;
 }
 
+/* Variables */
+:root {
+    --color-background: rgb(20, 20, 20);
+}
+
 /* Style */
 body {
     width: 100vw;
@@ -16,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-color: rgb(20, 20, 20);
+    background-color: var(--color-background);
 }
 
 .title {
@@ -52,7 +57,7 @@ body {
     padding: 0 30px;
     
     background-color: rgb(20, 20, 20);
-    color: rgb(255, 187, 0);
+    color: rgb(255, 123, 0);
     font-family: 'Comfortaa', cursive;
     box-sizing: border-box;
 }
@@ -79,7 +84,7 @@ body {
     gap: 10px;
 }
 
-.texto {
+.tarefa, .tarefaJS {
     width: 430px;
     height: auto;
 
@@ -88,14 +93,25 @@ body {
     gap: 20px;
 }
 
-.tarefa {
+.texto {
     font-size: 16px;
     
     color: white;
     font-family: 'Comfortaa', cursive;
 }
 
-.lixeira, .ok, .pendente {
+.buttonRemove {
+    background-color: var(--color-background);
+    color: white;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.buttonRemove:hover {
+    color: red;
+}
+
+.ok, .pendente {
     width: 20px;
     height: auto;
     

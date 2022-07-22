@@ -1,18 +1,38 @@
-feather.replace()
-
 const divTexto = document.createElement("div");
 const check = document.createElement("input");
 const tarefa = document.createElement("label");
+const buttonLixo = document.createElement("button")
 
-divTexto.setAttribute("class", "texto2");
-document.querySelector(".principal").appendChild(divTexto);
+const barra = document.querySelector(".escreve");
+const buttonAdd = document.querySelector(".buttonAdd");
 
+let tarefaTXT = [];
+buttonLixo.innerHTML = "X";
+
+divTexto.setAttribute("class", "tarefaJS");
 check.setAttribute("type", "checkbox", "class", "check");
-document.querySelector(".texto2").appendChild(check);
+tarefa.setAttribute("class", "texto");
+buttonLixo.setAttribute("class", "buttonRemove");
 
-tarefa.innerHTML = "blaaaa";
-tarefa.setAttribute("class", "oi");
-document.querySelector(".texto2").appendChild(tarefa);
+barra.onkeyup = () => { 
+    tarefaTXT = barra.value
+}
+
+buttonAdd.onclick = () => {
+    if (tarefaTXT.length > 0) {
+        view()
+        apiCreateTask(`${tarefaTXT}`, false);
+    }
+}
+
+const view = async () => {
+    tarefa.innerHTML = `${tarefaTXT}`;
+
+    document.querySelector(".principal").appendChild(divTexto);
+    document.querySelector(".tarefaJS").appendChild(check);
+    document.querySelector(".tarefaJS").appendChild(tarefa);
+    document.querySelector(".principal").appendChild(buttonLixo);
+}
 
 async function apiGetTask() {
     const url = 'http://localhost:3000/tasks/' // or const url = 'http://[::1]:3000/tasks'
@@ -98,5 +118,5 @@ async function apiUpdateTask(id, complete) {
 apiGetTask() // retorna a lista de tarefasQuantidade // get
 // apiPutTask(2, "task put", true) // put
 // apiUpdateTask(3, true) // patch
-// apiDeleteTask(1) // delete
+// apiDeleteTask(0) // delete
 

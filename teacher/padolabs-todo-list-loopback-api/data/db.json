@@ -1,19 +1,12 @@
 {
   "ids": {
-    "Task": 10
+    "Task": 4
   },
   "models": {
     "Task": {
-      "0": "{\"description\":\"Tarefa de Teste\",\"complete\":false,\"id\":0}",
-      "1": "{\"description\":\"Tarefa de Teste\",\"complete\":false,\"id\":1}",
-      "2": "{\"description\":\"Tarefa de Teste\",\"complete\":false,\"id\":2}",
-      "3": "{\"description\":\"Tarefa de Teste\",\"complete\":false,\"id\":3}",
-      "4": "{\"description\":\"Tarefa de Teste\",\"complete\":false,\"id\":4}",
-      "5": "{\"description\":\"Tarefa de Teste\",\"complete\":false,\"id\":5}",
-      "6": "{\"description\":\"Tarefa de Teste\",\"complete\":false,\"id\":6}",
-      "7": "{\"description\":\"Tarefa de Teste\",\"complete\":false,\"id\":7}",
-      "8": "{\"description\":\"Tarefa de Teste\",\"complete\":false,\"id\":8}",
-      "9": "{\"description\":\"Tarefa de Teste\",\"complete\":false,\"id\":9}"
+      "1": "{\"description\":\"oi\",\"complete\":false,\"id\":1}",
+      "2": "{\"description\":\"hfvfdf\",\"complete\":false,\"id\":2}",
+      "3": "{\"description\":\"dertgser\",\"complete\":false,\"id\":3}"
     }
   }
 }
